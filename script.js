@@ -14,8 +14,8 @@ function getComputerChoice(){
 }
 
 function getHumanChoice(){
-    let choice = prompt("rock paper or scissor?: ").toLowerCase
-
+    let choice = prompt("rock paper or scissor?: ").toLowerCase()
+ 
     if (choice === "rock" || choice === "paper" || choice === "scissor"){
         return choice
     } else {
@@ -24,6 +24,8 @@ function getHumanChoice(){
 }
 
 function playRound(humanChoice, computerChoice){
+    console.log(humanChoice)
+
     if (humanChoice === "rock"){
         if (computerChoice === "rock"){
            return `Draw!`
@@ -44,7 +46,7 @@ function playRound(humanChoice, computerChoice){
             computerScore += 1
             return "Computer wins!"
         }
-    } else {
+    } else if (humanChoice === "scissor") {
         if (computerChoice === "rock"){
             computerScore += 1
             return "Computer wins!"
