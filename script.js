@@ -59,6 +59,8 @@ function playRound(humanChoice, computerChoice){
 
 function playGame(){
     for (let i = 1; i <= 5; i ++){
+        console.log(`${i}/5`)
+
         let humanChoice = getHumanChoice()
 
         if (humanChoice != "Not a valid option!"){
@@ -66,7 +68,7 @@ function playGame(){
         
             let outcome = playRound(humanChoice, computerChoice)
             
-            console.log(`${i}/5\nPlayer: ${humanChoice}\nComputer: ${computerChoice}\n"${outcome}"\nPlayer: ${humanScore}\nComputer: ${computerScore}`)
+            console.log(`Player: ${humanChoice}\nComputer: ${computerChoice}\n"${outcome}"\nPlayer: ${humanScore}\nComputer: ${computerScore}`)
     
         } else {
             console.log(humanChoice)
