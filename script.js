@@ -26,33 +26,33 @@ function getHumanChoice(){
 function playRound(humanChoice, computerChoice){
      if (humanChoice === "rock"){
         if (computerChoice === "rock"){
-            console.log("Draw!")
+           return "Draw!"
         } else if (computerChoice === "paper") {
             computerScore += 1
-            console.log("Computer wins!")
+            return "Computer wins!"
         } else {
             humanScore += 1
-            console.log("You win!")
+            return "You win!"
         }
      } else if (humanChoice === "paper") {
         if (computerChoice === "rock"){
             humanScore += 1
-            console.log("You win!")
+            return "You win!"
         } else if (computerChoice === "paper") {
-            console.log("Draw!")
+            return "Draw!"
         } else {
             computerScore += 1
-            console.log("Computer wins!")
+            return "Computer wins!"
         }
      } else {
         if (computerChoice === "rock"){
             computerScore += 1
-            console.log("Computer wins!")
+            return "Computer wins!"
         } else if (computerChoice === "paper") {
             humanScore += 1
-            console.log("You win!")
+            return "You win!"
         } else {
-            console.log("Draw!")
+            return "Draw!"
         }
      }
 }
