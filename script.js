@@ -24,9 +24,9 @@ function getHumanChoice(){
 }
 
 function playRound(humanChoice, computerChoice){
-     if (humanChoice === "rock"){
+    if (humanChoice === "rock"){
         if (computerChoice === "rock"){
-           return "Draw!"
+           return `Draw!`
         } else if (computerChoice === "paper") {
             computerScore += 1
             return "Computer wins!"
@@ -34,7 +34,7 @@ function playRound(humanChoice, computerChoice){
             humanScore += 1
             return "You win!"
         }
-     } else if (humanChoice === "paper") {
+    } else if (humanChoice === "paper") {
         if (computerChoice === "rock"){
             humanScore += 1
             return "You win!"
@@ -44,7 +44,7 @@ function playRound(humanChoice, computerChoice){
             computerScore += 1
             return "Computer wins!"
         }
-     } else {
+    } else {
         if (computerChoice === "rock"){
             computerScore += 1
             return "Computer wins!"
@@ -54,7 +54,7 @@ function playRound(humanChoice, computerChoice){
         } else {
             return "Draw!"
         }
-     }
+    }
 }
 
 let humanChoice = getHumanChoice()
@@ -62,4 +62,4 @@ let computerChoice = getComputerChoice()
 
 let outcome = playRound(humanChoice, computerChoice)
 
-console.log(`${outcome}\nPlayer: ${humanScore}\nComputer: ${computerScore}\n`)
+console.log(`Computer: ${computerChoice}\n${outcome}\nPlayer: ${humanScore}\nComputer: ${computerScore}\n`)
