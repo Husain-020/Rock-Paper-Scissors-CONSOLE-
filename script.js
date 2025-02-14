@@ -24,8 +24,6 @@ function getHumanChoice(){
 }
 
 function playRound(humanChoice, computerChoice){
-    console.log(humanChoice)
-
     if (humanChoice === "rock"){
         if (computerChoice === "rock"){
            return `Draw!`
@@ -60,13 +58,13 @@ function playRound(humanChoice, computerChoice){
 }
 
 function playGame(){
-    for (let i = 1; i < 5; i ++){
+    for (let i = 1; i <= 5; i ++){
         let humanChoice = getHumanChoice()
         let computerChoice = getComputerChoice()
         
         let outcome = playRound(humanChoice, computerChoice)
         
-        console.log(`Computer: ${computerChoice}\n${outcome}\nPlayer: ${humanScore}\nComputer: ${computerScore}\n`)
+        console.log(`${i}/5\nPlayer: ${humanChoice}\nComputer: ${computerChoice}\n"${outcome}"\nPlayer: ${humanScore}\nComputer: ${computerScore}`)
     }
 }
 
