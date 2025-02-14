@@ -57,9 +57,15 @@ function playRound(humanChoice, computerChoice){
     }
 }
 
-let humanChoice = getHumanChoice()
-let computerChoice = getComputerChoice()
+function playGame(){
+    for (let i = 1; i < 5; i ++){
+        let humanChoice = getHumanChoice()
+        let computerChoice = getComputerChoice()
+        
+        let outcome = playRound(humanChoice, computerChoice)
+        
+        console.log(`Computer: ${computerChoice}\n${outcome}\nPlayer: ${humanScore}\nComputer: ${computerScore}\n`)
+    }
+}
 
-let outcome = playRound(humanChoice, computerChoice)
-
-console.log(`Computer: ${computerChoice}\n${outcome}\nPlayer: ${humanScore}\nComputer: ${computerScore}\n`)
+playGame()
