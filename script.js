@@ -13,9 +13,11 @@ function getComputerChoice(){
 function getHumanChoice(){
     let choice = prompt("rock paper or scissor?: ")
 
-    if (choice != "rock" || choice != "paper" || choice != "scissor"){
-        console.log("Not a valid choice!")
-    } else {
+    if (choice === "rock" || choice === "paper" || choice === "scissor"){
         return choice
+    } else {
+        return "Not a valid option!"
     }
 }
+
+console.log(getHumanChoice())
