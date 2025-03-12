@@ -102,6 +102,12 @@ function playGame(humanChoice){
     
         playerScoreDisplay.textContent = `${playerScore}/3`
         computerScoreDisplay.textContent = `${computerScore}/3`
+    
+        if (playerScore === 3){
+            finishGame("You")
+        }else if(computerScore === 3){
+            finishGame("Computer")
+        }
     } else {
         console.log(humanChoice)
     }
