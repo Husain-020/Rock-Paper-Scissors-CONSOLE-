@@ -21,8 +21,7 @@ header{
     color: white;
     font-weight: bold;
     font-size: 400%;
-
-    padding-top: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 main{
