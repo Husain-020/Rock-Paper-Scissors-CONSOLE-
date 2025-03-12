@@ -54,6 +54,8 @@ main{
 }
 
 #options{
-    height: 50px;
+    background-color: rgb(83, 43, 226);
+
+    height: 75px;
     width: 100%;
 }
