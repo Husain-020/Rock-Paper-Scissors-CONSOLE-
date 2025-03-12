@@ -1,5 +1,7 @@
 *{
     margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
 }
 
 body{
@@ -21,9 +23,7 @@ header{
 
     background-color: rgb(100, 10, 184);
     color: white;
-    font-weight: bold;
     font-size: 400%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 header p{
@@ -68,12 +68,22 @@ main{
 #options button{
     display: flex;
     align-items: center;
+    justify-content: center;
 
+    background-color: darksalmon;
+    color: azure;
+    font-size: 25px;
+    border-radius: 50px;
+    border: none;
     height: 50px;
     width: 200px;
 }
 
 #options button img{
-    position: relative;
-    overflow: hidden;
+    object-fit: contain;
+    border: 100%;
+}
+
+#options button p{
+    flex: 1;
 }
