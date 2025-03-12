@@ -2,6 +2,7 @@
     margin: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
+    color: white;
 }
 
 body{
@@ -23,10 +24,10 @@ header{
 
     background-color: rgb(100, 10, 184);
     color: white;
-    font-size: 400%;
+    font-size: 175%;
 }
 
-header p{
+h1{
     display: flex;
     justify-content: center;
 
@@ -54,7 +55,7 @@ main{
 #accounts{
     width: 100%;
     
-    flex: 1;
+    flex: 20;
 }
 
 #options{
@@ -69,13 +70,22 @@ main{
     width: 100%;
 }
 
+#outcome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(124, 57, 187);
+    width: 100%;
+    flex: 1;
+}
+
 #options button{
     display: flex;
     align-items: center;
     justify-content: center;
 
     background-color: darksalmon;
-    color: azure;
     font-size: 25px;
     border-radius: 50px;
     border: none;
@@ -93,5 +103,15 @@ main{
 }
 
 #options button p{
+    flex: 1;
+}
+
+#accounts{
+    display: flex;
+}
+
+#accounts div{
+    width: 50%;
+    
     flex: 1;
 }
