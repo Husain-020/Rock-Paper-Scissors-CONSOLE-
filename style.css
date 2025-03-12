@@ -54,8 +54,26 @@ main{
 }
 
 #options{
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
     background-color: rgb(83, 43, 226);
 
     height: 75px;
     width: 100%;
+}
+
+#options button{
+    display: flex;
+    align-items: center;
+
+    height: 50px;
+    width: 200px;
+}
+
+#options button img{
+    position: relative;
+    overflow: hidden;
 }
