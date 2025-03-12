@@ -43,6 +43,14 @@ function getComputerChoice(){
 }
 
 function playRound(humanChoice, computerChoice){
+    if (computerChoice === "rock"){
+        computerChoiceImg.src = rockImg
+    } else if (computerChoice === "paper") {
+        computerChoiceImg.src = paperImg
+    } else {
+        computerChoiceImg.src = scissorImg
+    }
+    
     if (humanChoice === "rock"){
         playerChoiceImg.src = rockImg
 

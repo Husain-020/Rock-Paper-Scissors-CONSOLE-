@@ -114,6 +114,7 @@ main{
     justify-content: top;
     align-items: center;
     gap: 2.5px;
+    padding: 2.5px;
 
     width: 50%;
     flex: 1;
@@ -122,6 +123,5 @@ main{
 #accounts div img{
     width: 100%;
     flex: 1;
-    
     border-radius: 10px;
 }
