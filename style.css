@@ -80,8 +80,12 @@ main{
 }
 
 #options button img{
+    height: 40px;
+    width: auto;
+
     object-fit: contain;
     border: 100%;
+    border-radius: 100%;
 }
 
 #options button p{
