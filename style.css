@@ -19,6 +19,7 @@ header{
     height: 100px;
     padding: 5px 10px;
 
+    background-color: rgb(100, 10, 184);
     color: white;
     font-weight: bold;
     font-size: 400%;
@@ -40,4 +41,19 @@ header a{
 main{
     width: 100%;
     flex-grow: 1;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#accounts{
+    width: 100%;
+    
+    flex: 1;
+}
+
+#options{
+    height: 50px;
+    width: 100%;
 }
