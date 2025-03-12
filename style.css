@@ -38,6 +38,10 @@ header a{
     align-items: center;
 }
 
+header a img{
+    border-radius: 10px;
+}
+
 main{
     width: 100%;
     flex-grow: 1;
